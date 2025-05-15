@@ -3,6 +3,7 @@ package org.lessons.java.spring_la_mia_pizzeria_crud.model;
 import java.math.BigDecimal;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,6 +28,7 @@ public class Ingredient {
 
 
     @ManyToMany(mappedBy = "ingredients")
+    @JsonIgnore
     private List<Pizza> pizze;
 
 

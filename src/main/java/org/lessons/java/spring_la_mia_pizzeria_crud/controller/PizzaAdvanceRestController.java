@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/adv/pizza")
+@RequestMapping("/api/adv/pizze")
 public class PizzaAdvanceRestController {
     @Autowired
     private PizzaService pizzaService;
